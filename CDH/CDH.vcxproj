@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D8901711-336F-4A17-A738-3C162A8EC73E}</ProjectGuid>
+    <RootNamespace>CDH</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\CDH;$(ProjectDir)..\..\..\..\..\..\..\..\..\Work\mpide-0150\libraries;$(ProjectDir)..\..\..\..\..\..\..\Documents\mpide\libraries;$(ProjectDir)..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware\pic32\libraries;$(ProjectDir)..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware\pic32\cores\pic32;$(ProjectDir)..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware\pic32\cores\pic32\avr;$(ProjectDir)..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware\pic32\variants\MXL795;$(ProjectDir)..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware\pic32\compiler\pic32-tools\pic32mx\include;$(ProjectDir)..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.CDH.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>__PIC32_32MX795F512L__;__PIC32MX__;__32MX795F512L__;__LANGUAGE_C_PLUS_PLUS__;MPIDEVER=16778004;MPIDE=150;ARDUINO=150;_BOARD_MEGA_;VM_TOOLCHAIN_VER=10900;F_CPU=30000000L;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\CDH;$(ProjectDir)..\..\..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware\pic32\cores\pic32;$(ProjectDir)..\..\..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware\pic32\cores\pic32\avr;$(ProjectDir)..\..\..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware\pic32\variants\MXL795;$(ProjectDir)..\..\..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware\pic32\compiler\pic32-tools\pic32mx\include;$(ProjectDir)..\..\..\..\..\..\..\..\..\..\..\Work\mpide-0150\hardware;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(ProjectDir)__vm\.CDH.vsarduino.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PreprocessorDefinitions>__PIC32_32MX795F512L__;__PIC32MX__;__32MX795F512L__;__LANGUAGE_C_PLUS_PLUS__;MPIDEVER=16778004;MPIDE=150;ARDUINO=150;_BOARD_MEGA_;VM_TOOLCHAIN_VER=10900;F_CPU=30000000L;__cplusplus=201103L;_VMICRO_INTELLISENSE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="CDH.ino">
+      <FileType>CppCode</FileType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="ADCS_PacketHandler.h" />
+    <ClInclude Include="AD_SRX.h" />
+    <ClInclude Include="AD_STX.h" />
+    <ClInclude Include="Alignment.h" />
+    <ClInclude Include="AnomalyHandler.h" />
+    <ClInclude Include="AnomalyLogger.h" />
+    <ClInclude Include="AppHeaders.h" />
+    <ClInclude Include="AppInfo.h" />
+    <ClInclude Include="AppManager.h" />
+    <ClInclude Include="AppRegistry.h" />
+    <ClInclude Include="AppStatus.h" />
+    <ClInclude Include="AutonomousControl.h" />
+    <ClInclude Include="BlockCommandDefinisions.h" />
+    <ClInclude Include="BlockCommandTable.h" />
+    <ClInclude Include="cmd_action.h" />
+    <ClInclude Include="cmd_action_adcs.h" />
+    <ClInclude Include="cmd_action_cmdtlm.h" />
+    <ClInclude Include="cmd_action_power.h" />
+    <ClInclude Include="cmd_analyze_obc.h" />
+    <ClInclude Include="cmd_item.h" />
+    <ClInclude Include="CommandDispatcher.h" />
+    <ClInclude Include="CommonSerialReceiver.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="DataRecorderManager.h" />
+    <ClInclude Include="Debug_Application.h" />
+    <ClInclude Include="cmd_code_obc.h" />
+    <ClInclude Include="EPS.h" />
+    <ClInclude Include="EPS_config.h" />
+    <ClInclude Include="EPS_update.h" />
+    <ClInclude Include="FRAM.h" />
+    <ClInclude Include="FRAM_cmd_manager.h" />
+    <ClInclude Include="FRAM_manager.h" />
+    <ClInclude Include="FRAM_TL_CmdDispatcher.h" />
+    <ClInclude Include="GNSS_receiver.h" />
+    <ClInclude Include="GS_DataHandler.h" />
+    <ClInclude Include="IMU.h" />
+    <ClInclude Include="IMU_CONFIG.h" />
+    <ClInclude Include="IMU_update.h" />
+    <ClInclude Include="InitialSL.h" />
+    <ClInclude Include="LoRaCmd_handler.h" />
+    <ClInclude Include="math.h" />
+    <ClInclude Include="Matrix.h" />
+    <ClInclude Include="MCP23008.h" />
+    <ClInclude Include="MCP23017.h" />
+    <ClInclude Include="MCP3421.h" />
+    <ClInclude Include="MCP4716.h" />
+    <ClInclude Include="ModeDefinisions.h" />
+    <ClInclude Include="ModeManager.h" />
+    <ClInclude Include="MPU9250_I2C.h" />
+    <ClInclude Include="MSN_PacketHandler.h" />
+    <ClInclude Include="MTQ_OBC.h" />
+    <ClInclude Include="nop.h" />
+    <ClInclude Include="NormalSL.h" />
+    <ClInclude Include="NormalTL.h" />
+    <ClInclude Include="OBCTime.h" />
+    <ClInclude Include="DSPI.h" />
+    <ClInclude Include="DTWI.h" />
+    <ClInclude Include="dWire0.h" />
+    <ClInclude Include="dWire1.h" />
+    <ClInclude Include="InternalDevice.h" />
+    <ClInclude Include="CommonTlmCmdPacket.h" />
+    <ClInclude Include="OBC_TlmGenerator.h" />
+    <ClInclude Include="PacketHandler.h" />
+    <ClInclude Include="PacketList.h" />
+    <ClInclude Include="PCU.h" />
+    <ClInclude Include="PDU.h" />
+    <ClInclude Include="PeripheralTL.h" />
+    <ClInclude Include="port_config.h" />
+    <ClInclude Include="Quaterninon.h" />
+    <ClInclude Include="Reed_Solomon.h" />
+    <ClInclude Include="RTC.h" />
+    <ClInclude Include="RTC_update.h" />
+    <ClInclude Include="RT_CmdDispatcher.h" />
+    <ClInclude Include="RT_TlmDispatcher.h" />
+    <ClInclude Include="RX8900.h" />
+    <ClInclude Include="SafeSL.h" />
+    <ClInclude Include="SerialFlash.h" />
+    <ClInclude Include="SerialTransmitter.h" />
+    <ClInclude Include="Stored_TlmGenerator.h" />
+    <ClInclude Include="STRX_update.h" />
+    <ClInclude Include="TaskDispatcher.h" />
+    <ClInclude Include="Temperature.h" />
+    <ClInclude Include="TimeManager.h" />
+    <ClInclude Include="TlmCmdTL.h" />
+    <ClInclude Include="TlmDispatcher.h" />
+    <ClInclude Include="tlm_frame.h" />
+    <ClInclude Include="TL_CmdDispatcher.h" />
+    <ClInclude Include="Utility.h" />
+    <ClInclude Include="UVC_app.h" />
+    <ClInclude Include="Wire.h" />
+    <ClInclude Include="__vm\.CDH.vsarduino.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="ADCS_PacketHandler.cpp" />
+    <ClCompile Include="AD_SRX.cpp" />
+    <ClCompile Include="AD_STX.cpp" />
+    <ClCompile Include="Alignment.cpp" />
+    <ClCompile Include="AnomalyHandler.cpp" />
+    <ClCompile Include="AnomalyLogger.cpp" />
+    <ClCompile Include="AppInfo.cpp" />
+    <ClCompile Include="AppManager.cpp" />
+    <ClCompile Include="AppRegistry.cpp" />
+    <ClCompile Include="AppStatus.cpp" />
+    <ClCompile Include="AutonomousControl.cpp" />
+    <ClCompile Include="BlockCommandDefinisions.cpp" />
+    <ClCompile Include="BlockCommandTable.cpp" />
+    <ClCompile Include="cmd_action.cpp" />
+    <ClCompile Include="cmd_action_adcs.cpp" />
+    <ClCompile Include="cmd_action_cmdtlm.cpp" />
+    <ClCompile Include="cmd_action_power.cpp" />
+    <ClCompile Include="cmd_analyze_obc.cpp" />
+    <ClCompile Include="cmd_item.cpp" />
+    <ClCompile Include="CommandDispatcher.cpp" />
+    <ClCompile Include="CommonSerialReceiver.cpp" />
+    <ClCompile Include="DataRecorderManager.cpp" />
+    <ClCompile Include="Debug_Application.cpp" />
+    <ClCompile Include="EPS.cpp" />
+    <ClCompile Include="EPS_update.cpp" />
+    <ClCompile Include="FRAM.cpp" />
+    <ClCompile Include="FRAM_cmd_manager.cpp" />
+    <ClCompile Include="FRAM_manager.cpp" />
+    <ClCompile Include="FRAM_TL_CmdDispatcher.cpp" />
+    <ClCompile Include="GNSS_receiver.cpp" />
+    <ClCompile Include="GS_DataHandler.cpp" />
+    <ClCompile Include="IMU.cpp" />
+    <ClCompile Include="IMU_update.cpp" />
+    <ClCompile Include="InitialSL.cpp" />
+    <ClCompile Include="LoRaCmd_handler.cpp" />
+    <ClCompile Include="Matrix.cpp" />
+    <ClCompile Include="MCP23008.cpp" />
+    <ClCompile Include="MCP23017.cpp" />
+    <ClCompile Include="MCP3421.cpp" />
+    <ClCompile Include="MCP4716.cpp" />
+    <ClCompile Include="ModeDefinisions.cpp" />
+    <ClCompile Include="ModeManager.cpp" />
+    <ClCompile Include="MPU9250_I2C.cpp" />
+    <ClCompile Include="MSN_PacketHandler.cpp" />
+    <ClCompile Include="MTQ_OBC.cpp" />
+    <ClCompile Include="nop.cpp" />
+    <ClCompile Include="NormalSL.cpp" />
+    <ClCompile Include="NormalTL.cpp" />
+    <ClCompile Include="OBCTime.cpp" />
+    <ClCompile Include="DSPI.cpp" />
+    <ClCompile Include="DTWI.cpp" />
+    <ClCompile Include="dWire0.cpp" />
+    <ClCompile Include="dWire1.cpp" />
+    <ClCompile Include="InternalDevice.cpp" />
+    <ClCompile Include="CommonTlmCmdPacket.cpp" />
+    <ClCompile Include="OBC_TlmGenerator.cpp" />
+    <ClCompile Include="PacketHandler.cpp" />
+    <ClCompile Include="PacketList.cpp" />
+    <ClCompile Include="PCU.cpp" />
+    <ClCompile Include="PDU.cpp" />
+    <ClCompile Include="PeripheralTL.cpp" />
+    <ClCompile Include="Quaterninon.cpp" />
+    <ClCompile Include="Reed_Solomon.cpp" />
+    <ClCompile Include="RTC.cpp" />
+    <ClCompile Include="RTC_update.cpp" />
+    <ClCompile Include="RT_CmdDispatcher.cpp" />
+    <ClCompile Include="RT_TlmDispatcher.cpp" />
+    <ClCompile Include="RX8900.cpp" />
+    <ClCompile Include="SafeSL.cpp" />
+    <ClCompile Include="SerialFlash.cpp" />
+    <ClCompile Include="SerialTransmitter.cpp" />
+    <ClCompile Include="Stored_TlmGenerator.cpp" />
+    <ClCompile Include="STRX_update.cpp" />
+    <ClCompile Include="TaskDispatcher.cpp" />
+    <ClCompile Include="Temperature.cpp" />
+    <ClCompile Include="TimeManager.cpp" />
+    <ClCompile Include="TlmCmdTL.cpp" />
+    <ClCompile Include="TlmDispatcher.cpp" />
+    <ClCompile Include="tlm_frame.cpp" />
+    <ClCompile Include="TL_CmdDispatcher.cpp" />
+    <ClCompile Include="Utility.cpp" />
+    <ClCompile Include="UVC_app.cpp" />
+    <ClCompile Include="Wire.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties arduino.board.desc="COMM32(30MHz)" arduino.board.name="pic32_pic32_pic32_MXL795" arduino.board.property_bag="name=COMM32(30MHz)&#xD;&#xA;group=SAT&#xD;&#xA;platform=pic32&#xD;&#xA;board=_BOARD_MEGA_&#xD;&#xA;board.define=&#xD;&#xA;ccflags=ffff&#xD;&#xA;ldscript=chipKIT-application-32MX795F512.ld&#xD;&#xA;upload.protocol=stk500v2&#xD;&#xA;upload.maximum_size=520192&#xD;&#xA;upload.speed=115200&#xD;&#xA;bootloader.low_fuses=0xff&#xD;&#xA;bootloader.high_fuses=0xdd&#xD;&#xA;bootloader.extended_fuses=0x00&#xD;&#xA;bootloader.path=not-supported&#xD;&#xA;bootloader.file=not-supported&#xD;&#xA;bootloader.unlock_bits=0x3F&#xD;&#xA;bootloader.lock_bits=0x0F&#xD;&#xA;build.mcu=32MX795F512L&#xD;&#xA;build.f_cpu=30000000L&#xD;&#xA;build.core=pic32&#xD;&#xA;build.variant=MXL795&#xD;&#xA;runtime.ide.path=C:\Work\mpide-0150&#xD;&#xA;runtime.os=windows&#xD;&#xA;build.system.path=C:\Work\mpide-0150\hardware\pic32\system&#xD;&#xA;runtime.ide.version=10900&#xD;&#xA;target_package=pic32&#xD;&#xA;target_platform=pic32&#xD;&#xA;runtime.hardware.path=C:\Work\mpide-0150\hardware&#xD;&#xA;originalid=pic32_pic32_MXL795&#xD;&#xA;intellisense.include.paths.more={runtime.ide.path}\hardware\pic32\compiler\pic32-tools\pic32mx\include;&#xD;&#xA;intellisense.extra_defines=__PIC32MX__;__{build.mcu}__;__LANGUAGE_C_PLUS_PLUS__;&#xD;&#xA;compiler.always_include_sketchfolder=true&#xD;&#xA;compiler.platform.path={runtime.ide.path}/hardware/{platform}/&#xD;&#xA;compiler.path={compiler.platform.path}compiler/pic32-tools/bin/&#xD;&#xA;compiler.core.path={compiler.platform.path}cores/pic32&#xD;&#xA;compiler.c.cmd=pic32-gcc&#xD;&#xA;compiler.c.flags=-O2::-c::-mno-smart-io::-w::-ffunction-sections::-fdata-sections::-g3::-mdebugger::-Wcast-align::-fno-short-double::-fframe-base-loclist&#xD;&#xA;compiler.cpp.cmd=pic32-g++&#xD;&#xA;compiler.cpp.flags=-O2::-c::-mno-smart-io::-w::-fno-exceptions::-ffunction-sections::-fdata-sections::-g3::-mdebugger::-Wcast-align::-fno-short-double::-fframe-base-loclist&#xD;&#xA;compiler.S.flags=-O2::-g1::-c::-Wa,--gdwarf-2&#xD;&#xA;compiler.objcopy.eep.flags=-O::ihex::-j::.eeprom::--set-section-flags=.eeprom=alloc,load::--no-change-warnings::--change-section-lma::.eeprom=0&#xD;&#xA;compiler.ar.cmd=pic32-ar&#xD;&#xA;compiler.ar.flags=rcs&#xD;&#xA;compiler.objcopy.cmd=pic32-objcopy&#xD;&#xA;compiler.c.elf.cmd=pic32-g++&#xD;&#xA;compiler.c.elf.flags=-Os::-Wl,--gc-sections::-mdebugger::-mno-peripheral-libs::-nostartfiles&#xD;&#xA;compiler.elf2hex.flags=-a&#xD;&#xA;compiler.elf2hex.cmd=pic32-bin2hex&#xD;&#xA;compiler.ldflags=&#xD;&#xA;compiler.size.cmd=pic32-size&#xD;&#xA;compiler.define={board.define}  -DMPIDEVER=16778004  -DMPIDE=150 -DARDUINO=150  -D{board} -DVM_TOOLCHAIN_VER={runtime.ide.version}&#xD;&#xA;build.extra_flags=&#xD;&#xA;build.ldscript=chipKIT-BL.ld&#xD;&#xA;recipe.c.o.pattern=&quot;{compiler.path}{compiler.c.cmd}&quot; {compiler.define} {compiler.c.flags} -mprocessor={build.mcu} -DF_CPU={build.f_cpu} {build.extra_flags}  {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;&#xD;&#xA;recipe.cpp.o.pattern=&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.define} {compiler.cpp.flags} -mprocessor={build.mcu} -DF_CPU={build.f_cpu} {build.extra_flags}  {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;&#xD;&#xA;recipe.s.o.pattern=&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.define}  {compiler.S.flags} -mprocessor={build.mcu} -DF_CPU={build.f_cpu} {build.extra_flags}  {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;&#xD;&#xA;recipe.ar.pattern=&quot;{compiler.path}{compiler.ar.cmd}&quot; {compiler.ar.flags} &quot;{build.path}/{archive_file}&quot; &quot;{object_file}&quot;&#xD;&#xA;recipe.c.combine.pattern=&quot;{compiler.path}{compiler.c.elf.cmd}&quot; {compiler.c.elf.flags} -mprocessor={build.mcu}  -o &quot;{build.path}/{build.project_name}.elf&quot; {object_files} &quot;{build.path}/{archive_file}&quot;  -L&quot;{build.path}&quot; -lm -T &quot;{compiler.core.path}/{ldscript}&quot; -T &quot;{compiler.core.path}/chipKIT-application-COMMON.ld&quot;&#xD;&#xA;recipe.objcopy.eep.pattern=&quot;{compiler.path}{compiler.objcopy.cmd}&quot; {compiler.objcopy.eep.flags} &quot;{build.path}/{build.project_name}.elf&quot; &quot;{build.path}/{build.project_name}.eep&quot;&#xD;&#xA;recipe.objcopy.hex.pattern=&quot;{compiler.path}{compiler.elf2hex.cmd}&quot; {compiler.elf2hex.flags} &quot;{build.path}/{build.project_name}.elf&quot;&#xD;&#xA;recipe.size.pattern=&quot;{compiler.path}{compiler.size.cmd}&quot; &quot;{build.path}/{build.project_name}.elf&quot;&#xD;&#xA;recipe.size.regex=\s([0-9]+)&#xD;&#xA;version=1.6.0&#xD;&#xA;compiler.c.extra_flags=&#xD;&#xA;compiler.cpp.extra_flags=&#xD;&#xA;compiler.ar.extra_flags=&#xD;&#xA;compiler.objcopy.eep.extra_flags=&#xD;&#xA;compiler.elf2hex.extra_flags=&#xD;&#xA;compiler.c.elf.extra_flags=&#xD;&#xA;compiler.cpudef=-mprocessor=&#xD;&#xA;compiler.ldscript=chipKIT-BL.ld&#xD;&#xA;compiler.upload.cmd=&#xD;&#xA;compiler.includepath={0}/hardware/pic32/compiler/pic32-tools/pic32mx/include&#xD;&#xA;compiler.upload.flags=&#xD;&#xA;library.core.path=./hardware/pic32/cores/pic32&#xD;&#xA;library.path=./hardware/pic32/libraries&#xD;&#xA;ldcommon=chipKIT-application-COMMON.ld&#xD;&#xA;core.header=WProgram.h&#xD;&#xA;recipe.S.o.pattern=&quot;{compiler.path}{compiler.cpp.cmd}&quot; {compiler.S.flags} -mprocessor={build.mcu} -DF_CPU={build.f_cpu}  -DARDUINO={runtime.ide.version} -D_{build.board} {compiler.define} &quot;{compiler.cpp.extra_flags}&quot; {build.extra_flags} {includes} &quot;{source_file}&quot; -o &quot;{object_file}&quot;&#xD;&#xA;recipe.size.regex.data=^(?:\.data|\.bss|\.noinit)\s+([0-9]+).*&#xD;&#xA;recipe.size.regex.eeprom=^(?:\.eeprom)\s+([0-9]+).*&#xD;&#xA;tools.avrdude.cmd.path={runtime.ide.path}/hardware/tools/avr/bin/avrdude&#xD;&#xA;tools.avrdude.config.path={runtime.hardware.path}/pic32/avrdude.conf&#xD;&#xA;tools.avrdude.upload.params.verbose=-v&#xD;&#xA;tools.avrdude.upload.params.quiet=-q -q&#xD;&#xA;tools.avrdude.upload.pattern=&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {upload.verbose} -p{build.mcu} -c{upload.protocol} -P{serial.port} -b{upload.speed} -D &quot;-Uflash:w:{build.path}/{build.project_name}.hex:i&quot;&#xD;&#xA;tools.avrdude.program.params.verbose=-v&#xD;&#xA;tools.avrdude.program.params.quiet=-q -q&#xD;&#xA;tools.avrdude.program.pattern=&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {program.verbose} -p{build.mcu} -c{protocol} {program.extra_params} &quot;-Uflash:w:{build.path}/{build.project_name}.hex:i&quot;&#xD;&#xA;tools.avrdude.erase.params.verbose=-v&#xD;&#xA;tools.avrdude.erase.params.quiet=-q -q&#xD;&#xA;tools.avrdude.erase.pattern=&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {erase.verbose} -p{build.mcu} -c{protocol} {program.extra_params} -e -Ulock:w:{bootloader.unlock_bits}:m -Uefuse:w:{bootloader.extended_fuses}:m -Uhfuse:w:{bootloader.high_fuses}:m -Ulfuse:w:{bootloader.low_fuses}:m&#xD;&#xA;tools.avrdude.bootloader.params.verbose=-v&#xD;&#xA;tools.avrdude.bootloader.params.quiet=-q -q&#xD;&#xA;tools.avrdude.bootloader.pattern=&quot;{cmd.path}&quot; &quot;-C{config.path}&quot; {bootloader.verbose} -p{build.mcu} -c{protocol} {program.extra_params} &quot;-Uflash:w:{runtime.platform.path}/bootloaders/{bootloader.file}:i&quot; -Ulock:w:{bootloader.lock_bits}:m&#xD;&#xA;vm.platform.root.path=C:\Program Files (x86)\Microsoft Visual Studio 14.0\Common7\IDE\Extensions\o13hds1d.gjb\Micro Platforms\mpide&#xD;&#xA;runtime.vm.boardinfo.id=pic32_pic32_pic32_MXL795&#xD;&#xA;runtime.vm.boardinfo.name=pic32_pic32_pic32_MXL795&#xD;&#xA;runtime.vm.boardinfo.desc=COMM32(30MHz)&#xD;&#xA;runtime.vm.boardinfo.src_location=C:\Work\mpide-0150\hardware\pic32&#xD;&#xA;ide.hint=For use with Arduino 0023 and 1.0.x versions&#xD;&#xA;ide.location.key=MPIDE&#xD;&#xA;ide.rewrite=disabled&#xD;&#xA;ide.contributions.boards.allow=false&#xD;&#xA;ide.contributions.boards.ignore_unless_rewrite_found=true&#xD;&#xA;ide.location.ide.winreg=MPIDE.x Application&#xD;&#xA;ide.location.sketchbook.winreg=MPIDE x Sketchbook&#xD;&#xA;ide.location.sketchbook.preferences=sketchbook.path&#xD;&#xA;ide.location.sketchbook.default=%MYDOCUMENTS%\mpide&#xD;&#xA;ide.location.preferences=%VM_APPDATA_ROAMING%\mpide\preferences.txt&#xD;&#xA;ide.default.package=mpide&#xD;&#xA;ide.default.platform=pic32&#xD;&#xA;ide.multiplatform=true&#xD;&#xA;ide.includes=Arduino.h&#xD;&#xA;ide.platformswithoutpackage=true&#xD;&#xA;ide.includes.fallback=wprogram.h&#xD;&#xA;ide.extension=ino&#xD;&#xA;ide.extension.fallback=pde&#xD;&#xA;ide.versionLTEQ=149&#xD;&#xA;ide.exe=mpide.exe&#xD;&#xA;vm.debug=true&#xD;&#xA;software=MPIDE&#xD;&#xA;ide.appid=mpide&#xD;&#xA;location.sketchbook=C:\Users\Tricom-1 GS2\Documents\mpide&#xD;&#xA;build.core.path=C:\Work\mpide-0150\hardware\pic32\cores\pic32&#xD;&#xA;vm.core.include=arduino.h&#xD;&#xA;build.board=PIC32_PIC32_PIC32_PIC32_MXL795&#xD;&#xA;vm.boardsource.path=C:\Work\mpide-0150\hardware\pic32&#xD;&#xA;runtime.platform.path=C:\Work\mpide-0150\hardware\pic32&#xD;&#xA;vm.platformname.name=pic32&#xD;&#xA;build.arch=PIC32&#xD;&#xA;builder.noino=false&#xD;&#xA;build.architecture=pic32-tools&#xD;&#xA;vmresolved.compiler.path=C:\Work\mpide-0150\hardware\pic32\compiler\pic32-tools\bin\&#xD;&#xA;vmresolved.tools.path=C:\Work\mpide-0150\hardware\pic32\compiler\pic32-tools&#xD;&#xA;intellisense.include.paths={runtime.hardware.path}&#xD;&#xA;" arduino.build.auto_discover_includes="1" arduino.build.core="pic32" arduino.build.f_cpu="30000000L" arduino.build.mcu="32MX795F512L" arduino.upload.maximum_size="520192" arduino.upload.port="COM7" arduino.upload.protocol="stk500v2" arduino.upload.speed="115200" visualmicro.application.name="mpide" visualmicro.package.name="pic32" visualmicro.platform.name="pic32" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

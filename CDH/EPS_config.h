@@ -1,0 +1,46 @@
+#ifndef EPS_CONFIG_H
+#define EPS_CONFIG_H
+
+#define WAIT_ADC_CONVERT_TIME	10	//msec
+
+#define EPS_MAIN_SYS	1
+#define EPS_SUB_SYS		0
+
+#define EPS_SYS_B		1
+#define EPS_SYS_A		0
+
+#define EPS_MAIN_BAT	0
+#define EPS_SUB_BAT		1
+
+//PCU I2C address
+#define	PCU_ADC_ADDRESS			0x69
+#define	PCU_DAC_MPPT_ADDRESS	0x60
+#define	PCU_DAC_BATT_ADDRESS	0x61
+#define	PCU_IOE_ADDRESS			0x21
+
+//PDU I2C address
+#define	PDU_ADC_ADDRESS			0x68
+#define	PDU_IOE_ADDRESS			0x20
+
+
+#define PCU_ADC_PGA_GAIN_x1	0
+#define PCU_ADC_PGA_GAIN_x2 1
+#define PCU_ADC_PGA_GAIN_x4 2
+#define PCU_ADC_PGA_GAIN_x8 3
+
+#define PCU_ADC_SAMPLING_12BIT	0
+#define PCU_ADC_SAMPLING_14BIT	1
+#define PCU_ADC_SAMPLING_16BIT	2
+#define PCU_ADC_SAMPLING_18BIT	3
+
+#define PDU_ADC_PGA_GAIN_x1	0
+#define PDU_ADC_PGA_GAIN_x2 1
+#define PDU_ADC_PGA_GAIN_x4 2
+#define PDU_ADC_PGA_GAIN_x8 3
+
+#define PDU_ADC_SAMPLING_12BIT	0
+#define PDU_ADC_SAMPLING_14BIT	1
+#define PDU_ADC_SAMPLING_16BIT	2
+#define PDU_ADC_SAMPLING_18BIT	3
+
+#endif

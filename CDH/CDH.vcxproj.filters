@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="ソース ファイル">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="リソース ファイル">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Driver">
+      <UniqueIdentifier>{35560d0f-9a26-4215-9d74-c7a48ff84485}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Driver">
+      <UniqueIdentifier>{cd2d41fb-0fa0-4d3a-8fbf-282c0f950a06}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Driver\Internal">
+      <UniqueIdentifier>{5f5f52a4-b2cd-4dab-9faa-9cd1d02c619f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\TaskManager">
+      <UniqueIdentifier>{13d73a30-66dd-4cb1-9661-dc0716f80bb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\TaskManager">
+      <UniqueIdentifier>{32bbbfbc-e0f7-408d-9bfe-16c37b5116b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\CmdTlm">
+      <UniqueIdentifier>{479c7c77-3bad-4b95-a0bd-a16eda81e701}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\CmdTlm">
+      <UniqueIdentifier>{9c8a357e-17ef-4c35-9ed9-1b3d0746637d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Modes">
+      <UniqueIdentifier>{3091efee-a7df-400d-a540-b783b541b40c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Modes">
+      <UniqueIdentifier>{386c8e13-2449-4e7a-8b19-6b3c41f5f95c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core">
+      <UniqueIdentifier>{969530e7-e82c-4540-9aae-d410324e62b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core\ModeManager">
+      <UniqueIdentifier>{5984332d-b079-46de-9cd2-04ba6df526be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core\ApplicationManager">
+      <UniqueIdentifier>{7e92787a-bfc0-47af-ac15-05bf3955a7be}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core\AnomalyLogger">
+      <UniqueIdentifier>{5dec6a9f-6b77-4738-9e8e-2bb79ec6619a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Core\TimeManager">
+      <UniqueIdentifier>{6ea4c0e1-40e9-4bdd-959e-cb78c996f333}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core">
+      <UniqueIdentifier>{041d65a1-8125-4f4a-b52f-5c354830d4d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core\ModeManager">
+      <UniqueIdentifier>{a2aa3941-e7e6-4c2e-92f7-a1a4142eda1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core\ApplicationManager">
+      <UniqueIdentifier>{17bc5dd8-f7d3-4a81-828e-d70fad1304c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core\AnomalyLogger">
+      <UniqueIdentifier>{6ba87edf-f893-4204-b13d-d18d93ad96eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Core\TimeManager">
+      <UniqueIdentifier>{1b3633f3-6c21-46c6-b074-098849b7ecea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Applications">
+      <UniqueIdentifier>{4deea3af-708e-4942-8b4a-032ceabc2bbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Applications">
+      <UniqueIdentifier>{c881e296-60a7-4d08-b335-30430aabfcdd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Applications\UserDefined">
+      <UniqueIdentifier>{79b2dec4-c413-4e41-91e1-d1d8e4fb9f22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Applications\UserDefined">
+      <UniqueIdentifier>{d32dbc97-21c9-4374-ae58-8a4a95442bef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\TaskList">
+      <UniqueIdentifier>{d05320f3-5517-453e-8927-0a4994b9f043}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\TaskList">
+      <UniqueIdentifier>{231939c9-266b-4389-ba7d-733ebb62af90}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Transition">
+      <UniqueIdentifier>{f85caede-9ae6-4345-8fcc-c8b6d03709d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Transition">
+      <UniqueIdentifier>{eda8932b-d1be-4fc7-a010-cd274f1cc036}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Driver\Internal">
+      <UniqueIdentifier>{ab1d10cd-02c3-4b5d-aca3-0488eb11b444}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\TaskList\Composition">
+      <UniqueIdentifier>{58b8e967-9b12-4b4f-8502-7780a1f38908}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\TaskList\Composition">
+      <UniqueIdentifier>{410d2c43-90b2-4272-9486-c6f426691f56}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Driver\EPS">
+      <UniqueIdentifier>{d52f2839-7931-4fc8-b673-cd22ab3306d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Driver\EPS">
+      <UniqueIdentifier>{aa17a289-1b02-4933-9b71-aa566a5634d1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Driver\IMU">
+      <UniqueIdentifier>{f61d61d3-973a-413d-83ce-ea11e93a2cec}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Driver\IMU">
+      <UniqueIdentifier>{f67a3fb7-3ef9-4714-b06b-0ae9b92b1546}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Driver\FRAM">
+      <UniqueIdentifier>{17bd7c8b-74e9-4089-a7d3-ba0bc1656644}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Driver\FRAM">
+      <UniqueIdentifier>{84641887-72a1-4ed5-a114-882217b900c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\CmdTlm\CmdAction">
+      <UniqueIdentifier>{6b738bf7-0a6a-49af-9ef5-55cfbaed665a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\CmdTlm\CmdAction">
+      <UniqueIdentifier>{43bf74aa-30f2-42ba-b792-da0acc667d13}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\TaskList\Transition">
+      <UniqueIdentifier>{85681b01-257d-44d9-b42e-c2ba44340ee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\TaskList\Transition">
+      <UniqueIdentifier>{9e13255f-266f-4305-a370-e87563c8a981}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\ADCS">
+      <UniqueIdentifier>{31a3ac4c-cc2b-4b35-84a4-b00d265681b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\ADCS">
+      <UniqueIdentifier>{22626a4b-f4d8-411b-a679-e1db48828b4e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Driver\Temperature">
+      <UniqueIdentifier>{96db97a4-93dc-4ceb-b28b-af346e88d68f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Driver\FlashROM">
+      <UniqueIdentifier>{fd3f5fc4-fa97-42a6-9b70-26c97202f70c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Driver\FlashROM">
+      <UniqueIdentifier>{d2dbdc69-d6ee-4f3b-b6d4-4c0c5b5356e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Driver\RTC">
+      <UniqueIdentifier>{4a7f42bb-ecc9-4c42-afa4-85f8a2e66dd2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Driver\RTC">
+      <UniqueIdentifier>{3ca72e5f-bfce-4de2-b338-cefe1c2b9ddb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\Driver\STRX">
+      <UniqueIdentifier>{502bb4cc-be14-47cd-bc58-fa3ae2ba8bdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Driver\STRX">
+      <UniqueIdentifier>{29a227bb-161f-44dd-9b2d-8e1c2d8ebf1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\AutonomousControl">
+      <UniqueIdentifier>{0359a0c5-d2b3-4144-a95b-4b31ef199c24}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ヘッダー ファイル\AutonomousControl">
+      <UniqueIdentifier>{18e66a2c-2fbc-45f2-a982-85ce002cc0f5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="CDH.ino" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="__vm\.CDH.vsarduino.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="DSPI.h">
+      <Filter>ヘッダー ファイル\Driver\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="DTWI.h">
+      <Filter>ヘッダー ファイル\Driver\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="dWire0.h">
+      <Filter>ヘッダー ファイル\Driver\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="dWire1.h">
+      <Filter>ヘッダー ファイル\Driver\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="InternalDevice.h">
+      <Filter>ヘッダー ファイル\Driver\Internal</Filter>
+    </ClInclude>
+    <ClInclude Include="TimeManager.h">
+      <Filter>ヘッダー ファイル\Core\TimeManager</Filter>
+    </ClInclude>
+    <ClInclude Include="OBCTime.h">
+      <Filter>ヘッダー ファイル\Core\TimeManager</Filter>
+    </ClInclude>
+    <ClInclude Include="TaskDispatcher.h">
+      <Filter>ヘッダー ファイル\TaskManager</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketList.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="PacketHandler.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="Utility.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonTlmCmdPacket.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="tlm_frame.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Reed_Solomon.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockCommandTable.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="AnomalyLogger.h">
+      <Filter>ヘッダー ファイル\Core\AnomalyLogger</Filter>
+    </ClInclude>
+    <ClInclude Include="AppInfo.h">
+      <Filter>ヘッダー ファイル\Core\ApplicationManager</Filter>
+    </ClInclude>
+    <ClInclude Include="AppManager.h">
+      <Filter>ヘッダー ファイル\Core\ApplicationManager</Filter>
+    </ClInclude>
+    <ClInclude Include="BlockCommandDefinisions.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="ModeManager.h">
+      <Filter>ヘッダー ファイル\Core\ModeManager</Filter>
+    </ClInclude>
+    <ClInclude Include="ModeDefinisions.h">
+      <Filter>ヘッダー ファイル\Modes</Filter>
+    </ClInclude>
+    <ClInclude Include="CommandDispatcher.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="AppRegistry.h">
+      <Filter>ヘッダー ファイル\Applications</Filter>
+    </ClInclude>
+    <ClInclude Include="AppHeaders.h">
+      <Filter>ヘッダー ファイル\Applications</Filter>
+    </ClInclude>
+    <ClInclude Include="nop.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="Debug_Application.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalTL.h">
+      <Filter>ヘッダー ファイル\TaskList</Filter>
+    </ClInclude>
+    <ClInclude Include="RT_TlmDispatcher.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="RT_CmdDispatcher.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="TL_CmdDispatcher.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="AppStatus.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="AnomalyHandler.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="UVC_app.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="CommonSerialReceiver.h">
+      <Filter>ヘッダー ファイル\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="GS_DataHandler.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="MSN_PacketHandler.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="TlmCmdTL.h">
+      <Filter>ヘッダー ファイル\TaskList\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="ADCS_PacketHandler.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="EPS_update.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="STRX_update.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="PeripheralTL.h">
+      <Filter>ヘッダー ファイル\TaskList\Composition</Filter>
+    </ClInclude>
+    <ClInclude Include="Alignment.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="math.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Matrix.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="port_config.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Quaterninon.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="Wire.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="MCP3421.h">
+      <Filter>ヘッダー ファイル\Driver\EPS</Filter>
+    </ClInclude>
+    <ClInclude Include="MCP4716.h">
+      <Filter>ヘッダー ファイル\Driver\EPS</Filter>
+    </ClInclude>
+    <ClInclude Include="MCP23017.h">
+      <Filter>ヘッダー ファイル\Driver\EPS</Filter>
+    </ClInclude>
+    <ClInclude Include="PDU.h">
+      <Filter>ヘッダー ファイル\Driver\EPS</Filter>
+    </ClInclude>
+    <ClInclude Include="PCU.h">
+      <Filter>ヘッダー ファイル\Driver\EPS</Filter>
+    </ClInclude>
+    <ClInclude Include="MPU9250_I2C.h">
+      <Filter>ヘッダー ファイル\Driver\IMU</Filter>
+    </ClInclude>
+    <ClInclude Include="IMU_CONFIG.h">
+      <Filter>ヘッダー ファイル\Driver\IMU</Filter>
+    </ClInclude>
+    <ClInclude Include="IMU.h">
+      <Filter>ヘッダー ファイル\Driver\IMU</Filter>
+    </ClInclude>
+    <ClInclude Include="EPS.h">
+      <Filter>ヘッダー ファイル\Driver\EPS</Filter>
+    </ClInclude>
+    <ClInclude Include="EPS_config.h">
+      <Filter>ヘッダー ファイル\Driver\EPS</Filter>
+    </ClInclude>
+    <ClInclude Include="IMU_update.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="FRAM.h">
+      <Filter>ヘッダー ファイル\Driver\FRAM</Filter>
+    </ClInclude>
+    <ClInclude Include="FRAM_manager.h">
+      <Filter>ヘッダー ファイル\Driver\FRAM</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_action.h">
+      <Filter>ヘッダー ファイル\CmdTlm\CmdAction</Filter>
+    </ClInclude>
+    <ClInclude Include="SafeSL.h">
+      <Filter>ヘッダー ファイル\TaskList\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="NormalSL.h">
+      <Filter>ヘッダー ファイル\TaskList\Transition</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_item.h">
+      <Filter>ヘッダー ファイル\CmdTlm\CmdAction</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_analyze_obc.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_code_obc.h">
+      <Filter>ヘッダー ファイル\CmdTlm\CmdAction</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_action_cmdtlm.h">
+      <Filter>ヘッダー ファイル\CmdTlm\CmdAction</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_action_power.h">
+      <Filter>ヘッダー ファイル\CmdTlm\CmdAction</Filter>
+    </ClInclude>
+    <ClInclude Include="OBC_TlmGenerator.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="MCP23008.h">
+      <Filter>ヘッダー ファイル\ADCS</Filter>
+    </ClInclude>
+    <ClInclude Include="MTQ_OBC.h">
+      <Filter>ヘッダー ファイル\ADCS</Filter>
+    </ClInclude>
+    <ClInclude Include="Temperature.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="FRAM_cmd_manager.h">
+      <Filter>ヘッダー ファイル\Driver\FRAM</Filter>
+    </ClInclude>
+    <ClInclude Include="cmd_action_adcs.h">
+      <Filter>ヘッダー ファイル\CmdTlm\CmdAction</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialFlash.h">
+      <Filter>ヘッダー ファイル\Driver\FlashROM</Filter>
+    </ClInclude>
+    <ClInclude Include="RTC.h">
+      <Filter>ヘッダー ファイル\Driver\RTC</Filter>
+    </ClInclude>
+    <ClInclude Include="RX8900.h">
+      <Filter>ヘッダー ファイル\Driver\RTC</Filter>
+    </ClInclude>
+    <ClInclude Include="RTC_update.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="FRAM_TL_CmdDispatcher.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="DataRecorderManager.h">
+      <Filter>ヘッダー ファイル\Driver\FlashROM</Filter>
+    </ClInclude>
+    <ClInclude Include="Stored_TlmGenerator.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+    <ClInclude Include="InitialSL.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="SerialTransmitter.h">
+      <Filter>ヘッダー ファイル\Driver</Filter>
+    </ClInclude>
+    <ClInclude Include="AD_SRX.h">
+      <Filter>ヘッダー ファイル\Driver\STRX</Filter>
+    </ClInclude>
+    <ClInclude Include="AD_STX.h">
+      <Filter>ヘッダー ファイル\Driver\STRX</Filter>
+    </ClInclude>
+    <ClInclude Include="TlmDispatcher.h">
+      <Filter>ヘッダー ファイル</Filter>
+    </ClInclude>
+    <ClInclude Include="AutonomousControl.h">
+      <Filter>ヘッダー ファイル\AutonomousControl</Filter>
+    </ClInclude>
+    <ClInclude Include="LoRaCmd_handler.h">
+      <Filter>ヘッダー ファイル\CmdTlm</Filter>
+    </ClInclude>
+    <ClInclude Include="GNSS_receiver.h">
+      <Filter>ヘッダー ファイル\Applications\UserDefined</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="DSPI.cpp">
+      <Filter>ソース ファイル\Driver\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="DTWI.cpp">
+      <Filter>ソース ファイル\Driver\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="dWire0.cpp">
+      <Filter>ソース ファイル\Driver\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="dWire1.cpp">
+      <Filter>ソース ファイル\Driver\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="InternalDevice.cpp">
+      <Filter>ソース ファイル\Driver\Internal</Filter>
+    </ClCompile>
+    <ClCompile Include="TimeManager.cpp">
+      <Filter>ソース ファイル\Core\TimeManager</Filter>
+    </ClCompile>
+    <ClCompile Include="OBCTime.cpp">
+      <Filter>ソース ファイル\Core\TimeManager</Filter>
+    </ClCompile>
+    <ClCompile Include="TaskDispatcher.cpp">
+      <Filter>ソース ファイル\TaskManager</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketList.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="PacketHandler.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="Utility.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonTlmCmdPacket.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="tlm_frame.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="Reed_Solomon.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockCommandTable.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="AnomalyLogger.cpp">
+      <Filter>ソース ファイル\Core\AnomalyLogger</Filter>
+    </ClCompile>
+    <ClCompile Include="AppInfo.cpp">
+      <Filter>ソース ファイル\Core\ApplicationManager</Filter>
+    </ClCompile>
+    <ClCompile Include="AppManager.cpp">
+      <Filter>ソース ファイル\Core\ApplicationManager</Filter>
+    </ClCompile>
+    <ClCompile Include="BlockCommandDefinisions.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="ModeManager.cpp">
+      <Filter>ソース ファイル\Core\ModeManager</Filter>
+    </ClCompile>
+    <ClCompile Include="ModeDefinisions.cpp">
+      <Filter>ソース ファイル\Modes</Filter>
+    </ClCompile>
+    <ClCompile Include="CommandDispatcher.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="AppRegistry.cpp">
+      <Filter>ソース ファイル\Applications</Filter>
+    </ClCompile>
+    <ClCompile Include="Debug_Application.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="nop.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalTL.cpp">
+      <Filter>ソース ファイル\TaskList</Filter>
+    </ClCompile>
+    <ClCompile Include="RT_TlmDispatcher.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="RT_CmdDispatcher.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="TL_CmdDispatcher.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="AnomalyHandler.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="AppStatus.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="UVC_app.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="CommonSerialReceiver.cpp">
+      <Filter>ソース ファイル\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="GS_DataHandler.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="MSN_PacketHandler.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="TlmCmdTL.cpp">
+      <Filter>ソース ファイル\TaskList\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="ADCS_PacketHandler.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="STRX_update.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="EPS_update.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="PeripheralTL.cpp">
+      <Filter>ソース ファイル\TaskList\Composition</Filter>
+    </ClCompile>
+    <ClCompile Include="Alignment.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Matrix.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Quaterninon.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="Wire.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="EPS.cpp">
+      <Filter>ソース ファイル\Driver\EPS</Filter>
+    </ClCompile>
+    <ClCompile Include="MCP3421.cpp">
+      <Filter>ソース ファイル\Driver\EPS</Filter>
+    </ClCompile>
+    <ClCompile Include="MCP4716.cpp">
+      <Filter>ソース ファイル\Driver\EPS</Filter>
+    </ClCompile>
+    <ClCompile Include="MCP23017.cpp">
+      <Filter>ソース ファイル\Driver\EPS</Filter>
+    </ClCompile>
+    <ClCompile Include="PCU.cpp">
+      <Filter>ソース ファイル\Driver\EPS</Filter>
+    </ClCompile>
+    <ClCompile Include="PDU.cpp">
+      <Filter>ソース ファイル\Driver\EPS</Filter>
+    </ClCompile>
+    <ClCompile Include="IMU.cpp">
+      <Filter>ソース ファイル\Driver\IMU</Filter>
+    </ClCompile>
+    <ClCompile Include="IMU_update.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="FRAM.cpp">
+      <Filter>ソース ファイル\Driver\FRAM</Filter>
+    </ClCompile>
+    <ClCompile Include="FRAM_manager.cpp">
+      <Filter>ソース ファイル\Driver\FRAM</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_action.cpp">
+      <Filter>ソース ファイル\CmdTlm\CmdAction</Filter>
+    </ClCompile>
+    <ClCompile Include="SafeSL.cpp">
+      <Filter>ソース ファイル\TaskList\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="NormalSL.cpp">
+      <Filter>ソース ファイル\TaskList\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_item.cpp">
+      <Filter>ソース ファイル\CmdTlm\CmdAction</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_analyze_obc.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_action_cmdtlm.cpp">
+      <Filter>ソース ファイル\CmdTlm\CmdAction</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_action_power.cpp">
+      <Filter>ソース ファイル\CmdTlm\CmdAction</Filter>
+    </ClCompile>
+    <ClCompile Include="MPU9250_I2C.cpp">
+      <Filter>ソース ファイル\Driver\IMU</Filter>
+    </ClCompile>
+    <ClCompile Include="OBC_TlmGenerator.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="MCP23008.cpp">
+      <Filter>ソース ファイル\ADCS</Filter>
+    </ClCompile>
+    <ClCompile Include="MTQ_OBC.cpp">
+      <Filter>ソース ファイル\ADCS</Filter>
+    </ClCompile>
+    <ClCompile Include="Temperature.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="FRAM_cmd_manager.cpp">
+      <Filter>ソース ファイル\Driver\FRAM</Filter>
+    </ClCompile>
+    <ClCompile Include="cmd_action_adcs.cpp">
+      <Filter>ソース ファイル\CmdTlm\CmdAction</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialFlash.cpp">
+      <Filter>ソース ファイル\Driver\FlashROM</Filter>
+    </ClCompile>
+    <ClCompile Include="RTC.cpp">
+      <Filter>ソース ファイル\Driver\RTC</Filter>
+    </ClCompile>
+    <ClCompile Include="RX8900.cpp">
+      <Filter>ソース ファイル\Driver\RTC</Filter>
+    </ClCompile>
+    <ClCompile Include="RTC_update.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="FRAM_TL_CmdDispatcher.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="DataRecorderManager.cpp">
+      <Filter>ソース ファイル\Driver\FlashROM</Filter>
+    </ClCompile>
+    <ClCompile Include="Stored_TlmGenerator.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+    <ClCompile Include="InitialSL.cpp">
+      <Filter>ソース ファイル\TaskList\Transition</Filter>
+    </ClCompile>
+    <ClCompile Include="SerialTransmitter.cpp">
+      <Filter>ソース ファイル\Driver</Filter>
+    </ClCompile>
+    <ClCompile Include="AD_SRX.cpp">
+      <Filter>ソース ファイル\Driver\STRX</Filter>
+    </ClCompile>
+    <ClCompile Include="AD_STX.cpp">
+      <Filter>ソース ファイル\Driver\STRX</Filter>
+    </ClCompile>
+    <ClCompile Include="TlmDispatcher.cpp">
+      <Filter>ソース ファイル</Filter>
+    </ClCompile>
+    <ClCompile Include="AutonomousControl.cpp">
+      <Filter>ソース ファイル\AutonomousControl</Filter>
+    </ClCompile>
+    <ClCompile Include="LoRaCmd_handler.cpp">
+      <Filter>ソース ファイル\CmdTlm</Filter>
+    </ClCompile>
+    <ClCompile Include="GNSS_receiver.cpp">
+      <Filter>ソース ファイル\Applications\UserDefined</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
