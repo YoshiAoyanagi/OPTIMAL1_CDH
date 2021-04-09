@@ -35,8 +35,33 @@ static void BC_load_uvc_lv1_action(size_t pos)	//ミッション機器OFF
 
 	BCT_clear_block(pos);
 
-	temp = start_transition(SAFE);
+	//Mission payload OFF
+	temp = heater_off();
 	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(2));
+	BCT_register_cmd(&temp);
+
+	temp = subcam_shutdown();
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(4));
+	BCT_register_cmd(&temp);
+
+	temp = msn_unreg_off();
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(6));
+	BCT_register_cmd(&temp);
+
+	temp = aqu_5v_off();
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(8));
+	BCT_register_cmd(&temp);
+
+	temp = ovco_off();
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(10));
+	BCT_register_cmd(&temp);
+
+	temp = msn5v_off();
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(14));
+	BCT_register_cmd(&temp);
+
+	temp = subcam_off();
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(20));
 	BCT_register_cmd(&temp);
 
 	BCT_activate_block();
@@ -48,16 +73,24 @@ static void BC_load_uvc_lv2_action(size_t pos)	//Safe mode
 
 	BCT_clear_block(pos);
 
-	temp = sf_off();
+	temp = adcs_mode_standby();
 	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(2));
 	BCT_register_cmd(&temp);
 
+	temp = start_transition(SAFE);
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(10));
+	BCT_register_cmd(&temp);
+
+	temp = sf_off();
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(42));
+	BCT_register_cmd(&temp);
+
 	temp = cmd_stx_set_duty(5, 4000);
-	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(4));
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(44));
 	BCT_register_cmd(&temp);
 
 	temp = cmd_stx_off();
-	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(6));
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(50));
 	BCT_register_cmd(&temp);
 
 	BCT_activate_block();
@@ -84,6 +117,11 @@ static void BC_load_uvc_return_action(size_t pos)
 	temp = ah_activate_rule(2);//UVC_RTN
 	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(7));
 	BCT_register_cmd(&temp);
+
+	temp = sf_on();
+	CCP_convert_rt_cmd_to_tl_cmd(&temp, OBCT_sec2cycle(8));
+	BCT_register_cmd(&temp);
+
 
 	BCT_activate_block();
 }

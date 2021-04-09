@@ -148,7 +148,6 @@ int Cmd_SRX_RESET(const CTCP* packet)
 	return CMD_ERROR_NONE;
 }
 
-
 int Cmd_POWER_REBOOT(const CTCP* packet)
 {
 	unsigned char pwr_onoff;
@@ -166,10 +165,7 @@ int Cmd_POWER_REBOOT(const CTCP* packet)
 	if (FRAM_Read_PWR_STS(FRAM_ADDRESS_PWR_RW, &pwr_onoff) == Success)
 		PWR_RW(pwr_onoff);
 	else
-	{
 		PWR_RW(PWR_OFF);
-		Serial.println("FRAM_PWR_REBOOT ERROR");
-	}
 		
 	if (FRAM_Read_PWR_STS(FRAM_ADDRESS_PWR_ADCS, &pwr_onoff) == Success)
 		PWR_ADCS(pwr_onoff);
@@ -200,6 +196,16 @@ int Cmd_POWER_REBOOT(const CTCP* packet)
 		PWR_RW_ENABLE(pwr_onoff);
 	else
 		PWR_RW_ENABLE(PWR_OFF);
+
+	if (FRAM_Read_PWR_STS(FRAM_ADDRESS_PWR_AQU_5V, &pwr_onoff) == Success)
+		PWR_AQU_5V(pwr_onoff);
+	else
+		PWR_AQU_5V(PWR_OFF);
+
+	if (FRAM_Read_PWR_STS(FRAM_ADDRESS_PWR_OVCO_5V, &pwr_onoff) == Success)
+		PWR_OVCO_5V(pwr_onoff);
+	else
+		PWR_OVCO_5V(PWR_OFF);
 
 	return CMD_ERROR_NONE;
 }

@@ -247,3 +247,75 @@ CTCP send_obc_utime_to_any(CCP_FT_ID to_id, unsigned char cmd_id)
 	return packet;
 }
 
+
+//add
+CTCP msn_unreg_on(void)
+{
+	unsigned char param[1];
+	param[0] = PWR_ON;
+	return CCP_form_rt_cmd(CODE_Cmd_UNREG_POWER, param, 1u);
+}
+
+CTCP msn_unreg_off(void)
+{
+	unsigned char param[1];
+	param[0] = PWR_OFF;
+	return CCP_form_rt_cmd(CODE_Cmd_UNREG_POWER, param, 1u);
+}
+
+CTCP subcam_shutdown(void)
+{
+	unsigned char param[1];
+	CTCP packet;
+	param[0] = 0;
+
+	packet = CCP_form_rt_cmd(0x0E, param, 1u);
+	CCP_set_cmd_to_id(&packet, FROM_TO_SUBCAM);
+	return packet;
+}
+
+CTCP heater_on(void)
+{
+	unsigned char param[1];
+	param[0] = PWR_ON;
+	return CCP_form_rt_cmd(CODE_Cmd_HEATER_POWER, param, 1u);
+}
+
+CTCP heater_off(void)
+{
+	unsigned char param[1];
+	param[0] = PWR_OFF;
+	return CCP_form_rt_cmd(CODE_Cmd_HEATER_POWER, param, 1u);
+}
+
+CTCP ovco_on(void)
+{
+	unsigned char param[1];
+	param[0] = PWR_ON;
+	return CCP_form_rt_cmd(CODE_Cmd_OVCO_5V_POWER, param, 1u);
+}
+
+CTCP ovco_off(void)
+{
+	unsigned char param[1];
+	param[0] = PWR_OFF;
+	return CCP_form_rt_cmd(CODE_Cmd_OVCO_5V_POWER, param, 1u);
+}
+
+CTCP aqu_5v_on(void)
+
+{
+	unsigned char param[1];
+	param[0] = PWR_ON;
+	return CCP_form_rt_cmd(CODE_Cmd_AQU_5V_POWER, param, 1u);
+}
+
+CTCP aqu_5v_off(void)
+
+{
+	unsigned char param[1];
+	param[0] = PWR_OFF;
+	return CCP_form_rt_cmd(CODE_Cmd_AQU_5V_POWER, param, 1u);
+}
+
+

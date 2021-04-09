@@ -34,8 +34,6 @@ CTCP cmd_stx_power(unsigned char pwr);
 CTCP cmd_stx_bitrate(unsigned char bps);
 CTCP cmd_stx_set_port(unsigned char port);
 
-CTCP msn_unreg_on(void);
-CTCP msn_unreg_off(void);
 
 CTCP sf_on(void);
 CTCP sf_off(void);
@@ -43,6 +41,17 @@ CTCP subcam_on(void);
 CTCP subcam_off(void);
 CTCP msn5v_on(void);
 CTCP msn5v_off(void);
+
+CTCP msn_unreg_on(void);
+CTCP msn_unreg_off(void);
+CTCP subcam_shutdown(void);
+CTCP heater_on(void);
+CTCP heater_off(void);
+CTCP ovco_on(void);
+CTCP ovco_off(void);
+CTCP aqu_5v_on(void);
+CTCP aqu_5v_off(void);
+
 
 CTCP st_block_cmd_deploy(unsigned char id);
 CTCP cmd_obc_dr_initialize(void);
